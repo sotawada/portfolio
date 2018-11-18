@@ -27,7 +27,7 @@
 
     <v-toolbar-items
       v-if="$store.state.isUserLoggedIn">
-      <v-btn @click="logout">Logout</v-btn>
+      <v-btn flat @click="logout">Logout</v-btn>
     </v-toolbar-items>
   </v-toolbar>
 </template>
@@ -41,7 +41,7 @@ export default {
     logout () {
       this.$store.dispatch('setToken', null)
       this.$store.dispatch('setUser', null)
-      this.$router.push(route)
+      this.$router.push('/')
     }
   }
 }
