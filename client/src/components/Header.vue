@@ -7,12 +7,9 @@
       </span>
     </v-toolbar-title>
 
-    <!-- TODO: Implement Me -->
-    <!-- <v-toolbar-items>
-      <v-btn flat>Browser</v-btn>
-      <v-btn flat>Link Two</v-btn>
-      <v-btn flat>Link Three</v-btn>
-    </v-toolbar-items> -->
+    <v-toolbar-items>
+      <v-btn flat to="/blogs">Browser</v-btn>
+    </v-toolbar-items>
 
     <v-spacer></v-spacer>
 
@@ -20,6 +17,7 @@
       v-if="!$store.state.isUserLoggedIn">
       <v-btn flat to="/login">Log in</v-btn>
     </v-toolbar-items>
+
     <v-toolbar-items
       v-if="!$store.state.isUserLoggedIn">
       <v-btn flat to="/register">Sign up</v-btn>
